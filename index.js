@@ -1,5 +1,11 @@
-// alert("h1 will be changed");
-// document.querySelector("h1").innerHTML="Hello";
+var player1 = prompt(" Enter the Player 1 name ");
+
+var player2 = prompt(" Enter the Player 2 name ");
+
+document.querySelector(".container .player-one").innerHTML = player1;
+
+document.querySelector(".container .player-two").innerHTML = player2;
+
 
 var randomNumber1 = Math.floor(Math.random() * 6 + 1);
 
@@ -21,13 +27,13 @@ var diceimg2 = "images\\dice" + randomNumber2 + ".png";
 var img2 = document.querySelectorAll("img")[1].setAttribute("src", diceimg2);
 
 if (randomNumber1 > randomNumber2) {
-  document.querySelector("h1").innerHTML = " 🏆 Player 1 Wins ";
+  document.querySelector("h1").innerHTML = " 🏆 " + player1 + " Wins ";
 } else if (randomNumber1 < randomNumber2) {
-  document.querySelector("h1").innerHTML = " 🏆 Player 2 wins ";
+  document.querySelector("h1").innerHTML = " 🏆 " + player2 + " Wins ";
 } else {
   document.querySelector("h1").innerHTML = " It's a draw 🤝";
 }
 
-function refreshPage(){
-window.location.reload();
+function refreshPage() {
+  window.location.reload();
 }
