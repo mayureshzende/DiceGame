@@ -1,0 +1,42 @@
+body {
+  background-color: #382933;
+  margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: yellow;
+  font-family: 'Lemonada', cursive;
+  font-size: 5rem;
+  font-weight: bold;
+  margin: 10px;
+}
+
+p {
+  color: #00b7c2;
+  font-size: 2rem;
+  font-family: 'Lemonada', cursive;
+  font-weight: lighter;
+}
+img{
+width: 80%;
+}
+
+.container {
+width: 70%;
+  margin: auto;
+  text-align: center;
+}
+
+.dice {
+display: inline-block;
+text-align: center;
+}
+
+.btn{
+background-color: orange;
+size: 50%;
+font-size: 20px;
+border-radius: 10%;
+font-family: 'Lemonada', sans-serif;
+font-weight: normal;
+}
